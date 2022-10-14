@@ -32,6 +32,7 @@ class _homeState extends State<home> {
               children: [
                 WebView(
                   initialUrl: 'https://baiya3.com',
+                  javascriptMode: JavascriptMode.unrestricted,
                   onPageStarted: (url) {
                     setState(() {
                       loadingPercentage = 0;
